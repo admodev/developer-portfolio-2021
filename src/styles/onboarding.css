@@ -3,6 +3,81 @@
   height: 75vh;
 }
 
+.secondContainer {
+  background-color: #e9c46a;
+  height: 75vh;
+  margin-top: 10vh;
+}
+
+.thirdContainer {
+  background-color: #f4a261;
+  height: 75vh;
+  margin-top: 10vh;
+}
+
+.cuarto {
+  background-color: #e76f51;
+  height: 75vh;
+  margin-top: 10vh;
+}
+
+.slideInText {
+  margin-top: 25vh;
+  margin-left: 20%;
+  animation-duration: 3s;
+  animation-name: slidein;
+  font-size: 4rem;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 20%;
+    width: 100%;
+  }
+}
+
 .navLink {
   color: #ffffff;
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+.navLink:hover {
+  color: #264653;
+  transform: scale(1.2);
+}
+
+h1,
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+h3,
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+@media (max-width: 450px) {
+  .slideInText {
+    display: none;
+  }
+
+  .innerContainer,
+  .secondContainer,
+  .thirdContainer,
+  .cuarto {
+    max-width: 85%;
+  }
 }
